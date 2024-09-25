@@ -22,12 +22,14 @@ public class App {
         service.getProducts();
         System.out.println();
 
-        // Eliminar productos
-//        service.delete(1);
-//        service.delete(2);
+        // Actualizar productos
+        service.update(new Product("Iphone", 999D, 2), 12);
+        service.update(new Product("Iphone", 998D, 2), 23);
 
-        // Actualizar
-        service.update(new Product("Iphone", 999D, 2), 1);
-        service.update(new Product("Iphone", 998D, 2), 2);
+        // Eliminar productos
+        service.delete(1);
+        service.delete(2);
+
+
     }
 }
