@@ -1,7 +1,7 @@
 package ar.com.ale94.model;
 
 public class Product {
-    private Long id;
+    private Integer id;
     private String name;
     private Double price;
     private Integer quantity;
@@ -9,9 +9,9 @@ public class Product {
     public Product() {
     }
 
-    public Product(String name, Long id, Double price, Integer quantity) {
-        this.name = name;
+    public Product(Integer id, String name, Double price, Integer quantity) {
         this.id = id;
+        this.name = name;
         this.price = price;
         this.quantity = quantity;
     }
@@ -22,11 +22,11 @@ public class Product {
         this.quantity = quantity;
     }
 
-    public Long getId() {
+    public Integer getId() {
         return id;
     }
 
-    public void setId(Long id) {
+    public void setId(Integer id) {
         this.id = id;
     }
 
